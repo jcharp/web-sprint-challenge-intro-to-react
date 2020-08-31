@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import Characters from './components/Character';
 
 
 const App = () => {
@@ -31,6 +32,19 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+        {character.map(person => {
+          return (
+            <Characters 
+              key={person.name}
+              name={person.name}
+              gender={person.gender}
+              homeworld={person.homeworld}
+              img_url={person.img_url}
+              />
+
+          );
+        })}
+
     </div>
   );
 }
