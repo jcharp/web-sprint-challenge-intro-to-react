@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 //writing out styled components part
 const WrapperDiv = styled.div`
-font-family; cursive;
-text-align; center
+font-family: cursive;
+text-align center;
 border: 2px solid black;
 `;
 
