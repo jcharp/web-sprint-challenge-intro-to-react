@@ -19,6 +19,9 @@ const App = () => {
         .get("https://swapi.dev/api/people/")
           .then(res  =>{
             console.log("Response from API ", res)
+// got response back and setting the characters to it
+            setCharacter(res.data.results);
+
           })
           .catch(err => {
             console.log(err)
